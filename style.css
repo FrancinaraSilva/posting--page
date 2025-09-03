@@ -1,0 +1,87 @@
+/* Limpeza de CSS padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container-form,
+.container-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c5cb2;
+}
+
+h3,
+p {
+    word-wrap: break-word;
+    /* Garante que o texto se quebre em linhas */
+}
+
+h3#renderizador-titulo {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
